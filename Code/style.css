@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+.china-leader{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.holiday-container{
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 200px); /* Adjust the number of columns as needed */
+    gap: 0px;
+}
+.holiday{
+    border: 2px solid black;
+    width: 150px;
+    height: 150px;
+    margin: 5px; 
+    padding: 5px;
+    background-color: red;
+}
