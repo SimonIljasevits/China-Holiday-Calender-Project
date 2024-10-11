@@ -6,7 +6,7 @@ async function ShowHolidays(){
 async function LoadHolidays(){
     var response = await fetch("https://raw.githubusercontent.com/SimonIljasevits/China-Holiday-Calender-Project/refs/heads/main/China%20Holiday%20Calender%20Database.json");
     const holidayArray = await response.json();
-    
+
     var holidayContainer = GetHolidayContainer();
     for (const holidayDate in holidayArray){
         const holiday = holidayArray[holidayDate]
@@ -32,7 +32,7 @@ function AddHoliday(holidayContainer, holiday) {
     <div class="holiday"
     <p>${holiday["date"]}</p>
     <p>${holiday["name"]}</p>
-    <p>IsOffDay: ${holiday["isOffDay"]}</p>
+    <p>Is Off Day: ${holiday["isOffDay"]}</p>
     </div>
     `
 
